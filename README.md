@@ -7,7 +7,4 @@ At the time of this writing I am thinking of structuring of following a patern o
 
 If you have questions, comments or would like to contribute please let me know
 
-Carl Boudreau
-carl.boudreau@tigergraph.com
-carlboudreau007@gmail.com
-https://www.linkedin.com/in/graphy-giraffe/
+Carl Boudreau | carl.boudreau@tigergraph.com | carlboudreau007@gmail.com | https://www.linkedin.com/in/graphy-giraffe/
