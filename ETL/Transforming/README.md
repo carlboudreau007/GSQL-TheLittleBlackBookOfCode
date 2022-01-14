@@ -1,10 +1,22 @@
 # GSQL - The Little Black Book Of Code
-This is a collection of Tips &amp; Trick and Hot-Too's to write and overcome difficult challenges with in TigerGrap and the GSQL language.
 
-This repository is will always be work in progress.  I will try to sort the folder structure thinking ahead but I will never be smarter today than I will be tomorrow.  So please bear with me.
+With the  data in below example:
+id, latitude, longitude
+1,"latitude=40.75","longitude=-73.97"
+2,"latitude=53.35","longitude=-6.21"
+3,"latitude=40.75","longitude=-73.97"
+4,"latitude=45.54","longitude=-122.83"
 
-[FOLDER NAME HERE]
-[Descritopn of contents here]
+I need to extract the float value and ingest it as FLOAT;
+
+CREATE LOADING JOB load_job_gps FOR GRAPH myGraph {
+    DEFINE FILENAME gps_data;
+    LOAD gps_data TO VERTEX locations VALUES(
+        $0,
+        gsql_str_to_float(gsql_trim(gsql_regex_replace($27,"^[^=]+=",""))),
+        gsql_str_to_float(gsql_trim(gsql_regex_replace($28,"^[^=]+=","")))
+    ) USING SEPARATOR=",", HEADER="true", EOL="\n", QUOTE="double";
+}
 
 If you have questions, comments or would like to contribute please let me know
 
