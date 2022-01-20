@@ -1,5 +1,5 @@
 # GSQL - The Little Black Book Of Code
-This is a collection of Tips &amp; Trick and Hot-Too's to write and overcome difficult challenges with in TigerGrap and the GSQL language.
+This is a collection of Tips &amp; Trick and How-Too's to write and overcome difficult challenges with in TigerGrap and the GSQL language.
 
 # Using Distributed Mode in GSQL
 This is a collection of GSQL statements show how to create a GSQL query for distributed mode
