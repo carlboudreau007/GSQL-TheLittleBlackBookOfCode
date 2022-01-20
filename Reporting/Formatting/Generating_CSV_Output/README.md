@@ -3,7 +3,7 @@ This is a collection of Tips &amp; Trick and Hot-Too's to write and overcome dif
 
 # Generating a CSV file from GSQL for down stream consumption.
 
-'''GSQL
+''''GSQL
 CREATE QUERY outputFile(/* Parameters here */) FOR GRAPH Entity_Resolution {
 
   File f1("/home/tigergraph/mydata/video_genre.csv");
@@ -17,7 +17,7 @@ CREATE QUERY outputFile(/* Parameters here */) FOR GRAPH Entity_Resolution {
   PRINT start;
   
 }
-'''
+''''
 
 This repository is will always be work in progress.  I will try to sort the folder structure thinking ahead but I will never be smarter today than I will be tomorrow.  So please bear with me.
 
