@@ -2,7 +2,8 @@
 This is a collection of Tips &amp; Trick and Hot-Too's to write and overcome difficult challenges with in TigerGrap and the GSQL language.
 
 # Generating a CSV file from GSQL for down stream consumption.
-'''
+
+'''GSQL
 CREATE QUERY outputFile(/* Parameters here */) FOR GRAPH Entity_Resolution {
 
   File f1("/home/tigergraph/mydata/video_genre.csv");
