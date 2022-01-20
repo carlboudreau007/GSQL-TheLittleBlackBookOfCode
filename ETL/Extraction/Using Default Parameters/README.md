@@ -1,5 +1,5 @@
 # GSQL - The Little Black Book Of Code
-This is a collection of Tips &amp; Trick and Hot-Too's to write and overcome difficult challenges with in TigerGrap and the GSQL language.
+This is a collection of Tips &amp; Trick and How-Too's to write and overcome difficult challenges with in TigerGrap and the GSQL language.
 
 # Using Default Parameters
 This is a collection of GSQL statements show how to use default parmeters in a GSQL query
