@@ -3,12 +3,18 @@ This is a collection of Tips &amp; Trick and Hot-Too's to write and overcome dif
 
 # Generating a CSV file from GSQL for down stream consumption.
 '''
-CREATE QUERY outputFile(/* Parameters here */) FOR GRAPH Entity_Resolution { 
+CREATE QUERY outputFile(/* Parameters here */) FOR GRAPH Entity_Resolution {
+
   File f1("/home/tigergraph/mydata/video_genre.csv");
+  
   Start = {Genre.*};
+  
   f1.println("genre, video");
+  
   start = SELECT s FROM Start:s-(Has_Genre)-Video:t accum f1.println(s,t.title);
+  
   PRINT start;
+  
 }
 '''
 
